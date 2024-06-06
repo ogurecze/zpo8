@@ -1,0 +1,20 @@
+Wzorzec projektowy Fabryka, znany także jako Fabryka Abstrakcyjna (Abstract Factory), jest jednym z fundamentalnych wzorców w programowaniu obiektowym. Jego głównym celem jest oddzielenie procesu tworzenia obiektów od ich reprezentacji, co umożliwia bardziej elastyczne i łatwe w utrzymaniu projektowanie systemów.
+
+Wzorzec Fabryka polega na stworzeniu interfejsu do tworzenia obiektów w klasie bazowej, podczas gdy konkretne klasy potomne decydują, jakie konkretne typy obiektów mają być tworzone. W ten sposób kod, który korzysta z tych obiektów, nie jest bezpośrednio zależny od ich konkretnych klas, co zwiększa elastyczność i modularność systemu.
+
+Kluczowe komponenty wzorca Fabryka:
+-Fabryka Abstrakcyjna (Abstract Factory) - interfejs deklarujący metody tworzenia różnych produktów.
+-Konkretny Produkt (Concrete Product) - konkretna implementacja obiektu tworzonego przez fabrykę.
+-Fabryka Konkretna (Concrete Factory) - implementacja interfejsu fabryki abstrakcyjnej, odpowiedzialna za tworzenie konkretnych produktów.
+
+Najczęstsze zastosowania wzorca Fabryka
+
+-Systemy GUI - W systemach graficznego interfejsu użytkownika (GUI) fabryki abstrakcyjne mogą być używane do tworzenia różnych elementów interfejsu użytkownika (takich jak przyciski, okna, menu), które mogą różnić się w zależności od platformy (Windows, macOS, Linux).
+
+-Systemy zarządzania bazą danych - Fabryki mogą być używane do tworzenia obiektów związanych z bazami danych, takich jak połączenia, polecenia i adaptery danych, w sposób niezależny od konkretnego systemu zarządzania bazą danych (np. MySQL, PostgreSQL, Oracle).
+
+-Systemy wtyczek - W systemach, które korzystają z wtyczek, fabryki mogą być używane do tworzenia instancji różnych wtyczek, co pozwala na łatwą rozbudowę i modyfikację funkcjonalności systemu bez konieczności zmiany jego kodu źródłowego.
+
+-Testowanie jednostkowe - Wzorzec Fabryka może być używany do tworzenia mocków i stubów w testach jednostkowych, co pozwala na testowanie różnych scenariuszy bez konieczności zależności od rzeczywistych implementacji.
+
+-Systemy wielowarstwowe - W systemach wielowarstwowych, gdzie każda warstwa może mieć różne implementacje, fabryki mogą być używane do tworzenia odpowiednich obiektów dla każdej warstwy, co zwiększa modularność i ułatwia utrzymanie kodu.

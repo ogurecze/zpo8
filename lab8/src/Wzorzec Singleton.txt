@@ -1,0 +1,10 @@
+Wzorzec Singleton jest najczęściej wykorzystywany w następujących sytuacjach:
+
+Logowanie (Logging): Centralne miejsce do zapisywania logów.
+Zarządzanie konfiguracją (Configuration Management): Przechowywanie ustawień konfiguracyjnych.
+Dostęp do zasobów (Resource Access): Zarządzanie połączeniami do baz danych.
+Zarządzanie wątkami (Thread Management): Zarządzanie wątkami i synchronizacją.
+Buforowanie (Caching): Implementacja mechanizmów buforowania danych.
+Fasada systemowa (System Facade): Udostępnienie uproszczonego interfejsu do złożonych systemów.
+
+Celem Singletona jest zapewnienie jednej instancji klasy i globalnego punktu dostępu do niej, co upraszcza zarządzanie stanem i zasobami aplikacji.
